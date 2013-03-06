@@ -1,0 +1,12 @@
+// This function return true or false depending on input i is an exponetial power of 2
+
+static boolean isExponetialPowerOfTwo(int i) {
+       if (i < 1) return false;
+       if (i == 1) return true;
+       do {
+           if ((i % 2) == 1) return false;
+           i = i/2;
+
+       } while(i > 2 );
+       return true;
+}
