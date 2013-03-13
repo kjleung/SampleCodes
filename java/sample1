@@ -6,6 +6,8 @@ static boolean isExponetialPowerOfTwo(int i) {
        do {
               // Modulus and Division are slow operations for the hardware
               // This can be done using bit masking and shifting which is hardware fast
+              // Bit shifting and masking are 10 of magnitudes less in actual transistors
+              // also costing far less power.
 
 //           if ((i % 2) == 1) return false;
 //           i = i/2;
